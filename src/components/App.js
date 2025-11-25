@@ -13,7 +13,7 @@ const App = () => {
 
   function handleComplete(id) {
     const newTodos = todos.map((todo) =>
-      todo.id === id ? { ...todo, isCompleted: !todo.isCompleted } : todo
+      todo.id === id ? { ...todo, isCompleted: true } : todo
     );
     setTodos(newTodos);
   }

@@ -16,10 +16,9 @@ function Todo({ todo, onComplete }) {
   return (
     <li style={{ textDecoration: isCompleted ? "line-through" : "none" }}>
       {title}
-      {" "}
       {!isCompleted && (
         <button
-          onClick={() => onComplete(id)}   
+          onClick={() => onComplete(id)}
         >
           Complete
         </button>
